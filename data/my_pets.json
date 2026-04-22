@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Fluffy",
+    "age": 3,
+    "type": "guinea pig",
+    "favorite_foods": [
+      "lettuce",
+      "carrots",
+      "cucumbers "
+    ]
+  },
+  {
+    "name": "Viktor",
+    "age": 5,
+    "type": "dog",
+    "favorite_foods": [
+      "steak",
+      "sausages",
+      "lamb chops",
+      "dog food"
+    ]
+  }
+]
