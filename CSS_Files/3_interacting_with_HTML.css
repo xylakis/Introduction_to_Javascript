@@ -1,0 +1,31 @@
+h1 {
+    color: rgb(176, 10, 226);
+    margin: 55px; 
+    padding: 5px;
+}
+
+p{
+    margin-top:20px; 
+    margin-bottom: 1px;
+}
+
+p strong{
+    font-size:30px;
+}
+
+#top-heading{
+    font-size: 48px;
+}
+
+#second-heading{
+    color:chocolate;
+}
+
+#main-paragraph{
+    font-size:24px;
+}
+
+.highlight{
+    background-color: darkkhaki;
+}
+

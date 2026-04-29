@@ -19,5 +19,16 @@
       "lamb chops",
       "dog food"
     ]
+  },
+  {
+    "name": "Mars",
+    "age": 15,
+    "type": "dog",
+    "favorite_foods": [
+      "Mpatzetes",
+      "Skilotrofi",
+      "Giaourti"
+    ]
   }
+
 ]

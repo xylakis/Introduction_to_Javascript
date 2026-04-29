@@ -1,3 +1,6 @@
+// ------- JavaScript Lists -------
+
+
 let zygoi = [0,2,4,6,8]
 let monoi = [1,3,5,7,9]
 let unsorted = [5,2,9,1,5,6]
@@ -51,6 +54,11 @@ let mylist = unsorted.slice(1,-2)
 
 // console.log(zygoi)
 
+
+// ------- JavaScript Objects -------
+
+let casablance_list = ['Cablanca', '1942', 'Michael Curtiz']
+
 //movie object
 let casablanca = {
 "title": "Casablanca",
@@ -61,7 +69,7 @@ let casablanca = {
 "crew" : ['peter', 'georgia', 'helen']
 }
 
-//pet object
+
 
 //accessing object value using dot notation
 // console.log(casablanca.title)
@@ -75,6 +83,8 @@ casablanca.released = 1941
 
 // console.log(casablanca)
 
+
+//pet object
 let pet = {};
 
 pet.name = "Fluffy";
@@ -89,7 +99,15 @@ let myOtherPet = {
     favorite_foods : ['steak', 'sausages', 'lamb chops', 'dog food']
 }
 
-let my_pets = [pet,myOtherPet]
+let my_favouritePet = {
+    name : "Mars",
+    age : 15,
+    type : "dog",
+    favorite_foods : ['Mpatzetes', 'Skilotrofi', 'Giaourti'] 
+
+}
+
+let my_pets = [pet,myOtherPet,my_favouritePet]
 
 // make a new holder variable
 const fs = require('fs');
@@ -98,7 +116,7 @@ const fs = require('fs');
 const json = JSON.stringify(my_pets, null, 2);
 
 // Save to file
-fs.writeFileSync('data/my_pets.json', json);
+fs.writeFileSync('../data/my_pets.json', json);
 
 console.log(my_pets);
 
