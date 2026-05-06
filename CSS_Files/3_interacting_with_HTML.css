@@ -2,12 +2,20 @@ h1 {
     color: rgb(176, 10, 226);
     margin: 55px; 
     padding: 5px;
+    cursor: pointer;
 }
 
 p{
     margin-top:20px; 
     margin-bottom: 1px;
+
 }
+
+.myButtons{
+    cursor: pointer;
+}
+
+
 
 p strong{
     font-size:30px;
