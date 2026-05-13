@@ -1,7 +1,7 @@
 const clrbtn = document.getElementById("clrBtn");
 const increaseFontBtn = document.getElementById("increaseFontBtn");
 const decreaseFontBtn = document.getElementById("decreaseFontBtn");
-let paragraphMouse = document.getElementById("paragraph-mouse")
+let paragraphMouse = document.getElementById("paragraph-mouse");
 
 heading.addEventListener("click", () => {
 console.log("You clicked the heading!");
@@ -34,6 +34,16 @@ document.querySelector("html").addEventListener("mousemove", e => {
 
     paragraphMouse.innerText = `mousemove x: ${e.clientX}, y: ${e.clientY}`;
 });
+
+function toggleBrightDarkMode(){
+    
+    document.documentElement.classList.toggle('mode-dark');
+
+    const isDark = document.documentElement.classList.contains('mode-dark');
+    document.getElementById('icon-sun').style.display  = isDark ? 'block'  : 'none';
+    document.getElementById('icon-moon').style.display = isDark ? 'none' : 'block';
+
+}
 
 
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class = "mode-bright">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,11 @@
     <link rel="stylesheet" href="CSS_Files/3_interacting_with_HTML.css">
     <script type="text/javascript" src = "JS_Files/3_interacting_with_HTML.js" defer></script>
     <script type="text/javascript" src = "JS_Files/4_eventHandlers.js" defer></script>
-
+    <script type="text/javascript" src = "JS_Files/5_canvas_drawing.js" defer></script>
 </head>
-<body>
+<body class = "card">
+
+
 
 <h1 id="top-heading" class="highlight" >Hello, World!</h1> 
 
@@ -19,20 +22,21 @@
 
 <h2 id="second-heading">This is the Second Heading </h2>
 
-
+<canvas id="canvas" width="300" height="300"></canvas>
 
 <p id = "main-paragraph" class = "highlight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
     Nullam pretium tortor sapien, nec sagittis enim maximus ac. Donec dui nisi, faucibus at sagittis id, sagittis non mauris. 
     Praesent id magna eget nulla eleifend facilisis a ut magna. Donec sit amet lectus commodo, vehicula turpis nec, rutrum lectus. 
-    Curabitur nec mattis justo. Phasellus dapibus nisi eu malesuada rhoncus. Ut egestas ex non malesuada accumsan. Sed varius turpis 
-    fermentum eros finibus, sit amet dapibus lectus pretium. Cras auctor at sem et mattis. Morbi feugiat, diam quis pellentesque suscipit, 
-    sem odio ultrices nisi, eu finibus tellus ante sed augue. <strong>Donec dignissim tincidunt pulvinar.</strong> Morbi congue, sapien id ultricies pellentesque, 
-    mi dolor interdum libero, rhoncus finibus elit elit scelerisque nisl. Aliquam sit amet aliquet lectus. Proin vulputate pretium ligula nec finibus. 
-    Sed sit amet orci sed est volutpat consequat et sit amet ligula. Quisque faucibus volutpat risus mollis bibendum.</p>
-<p id="paragraph-mouse"> </p>
+    Curabitur nec mattis justo.</p>
+<p id="paragraph-mouse"> test </p>
     <input class = "myButtons" type="button" value="Change H1 Color" id="clrBtn" >
     <input class = "myButtons" type="button" value="+" id="increaseFontBtn" >
     <input  class = "myButtons" type="button" value="-" id="decreaseFontBtn" >
+    
+    <button id="bright-dark-toggle-btn" onclick="toggleBrightDarkMode()">
+        <img style="display: none;" id="icon-sun" src="icons/sun-svgrepo-com.svg" width="34" height="34" alt="bright mode"></img>   <!-- shown in bright mode -->
+        <img id="icon-moon" src="icons/moon-svgrepo-com.svg" width="34" height="34" alt="dark mode"></img>
+    </button>
 
 </body>
 </html>

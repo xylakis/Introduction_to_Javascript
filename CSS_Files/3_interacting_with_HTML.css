@@ -37,3 +37,27 @@ p strong{
     background-color: darkkhaki;
 }
 
+.mode-bright { 
+    --bg-surface: #F5F5F5; 
+    --text-primary: #000; 
+}
+
+.mode-dark { 
+    --bg-surface: #161616; 
+    --text-primary: #F0F0F0; }
+
+.card {
+  background: var(--bg-surface);   /* reads whatever the parent set */
+  color: var(--text-primary);
+}
+
+#bright-dark-toggle-btn{
+    /* position: fixed;
+    top: 20px;
+    right: 20px; */
+    background: rgb(158, 155, 155);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
